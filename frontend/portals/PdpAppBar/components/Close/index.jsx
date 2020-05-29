@@ -7,7 +7,7 @@ import { CrossIcon, AppBarAndroid } from '@shopgate/engage/components';
 const styles = {
   button: css({
     position: 'absolute',
-    top: themeConfig.variables.gap.big,
+    top: `calc(var(--safe-area-inset-top) + ${themeConfig.variables.gap.big}px)`,
     left: themeConfig.variables.gap.big,
     ' button': {
       alignItems: 'center',
