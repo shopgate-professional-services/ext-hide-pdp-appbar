@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import { updateStatusBarBackground, useRoute } from '@shopgate/engage/core';
 import { ITEM_PATTERN } from '@shopgate/engage/product';
 import Close from './components/Close';
-import CartBadge from './components/CartBadge';
 
 const styles = {
   bar: css({
@@ -39,7 +38,6 @@ const PdpAppBar = ({ children, updateStatusBarBackground: updateStatusBar }) => 
   return (
     <div className={styles.bar}>
       <Close />
-      <CartBadge />
     </div>
   );
 };

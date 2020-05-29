@@ -8,14 +8,12 @@ Set the following value in your Shopgate Connect Admin:
 
 * styles - (json) styles for elements
     * closeButton - (json) css rules
-    * cartButton - (json) css rules
 
 ## Default value
 ```
 {
   "styles": {
     "closeButton": null,
-    "cartButton": null
   }
 }
 ```

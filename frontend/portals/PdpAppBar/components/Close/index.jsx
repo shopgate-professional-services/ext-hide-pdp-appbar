@@ -3,22 +3,22 @@ import { css } from 'glamor';
 import { themeConfig } from '@shopgate/engage';
 import { useNavigation } from '@shopgate/engage/core';
 import { CrossIcon, AppBarAndroid } from '@shopgate/engage/components';
+import { styles } from '../../../../config';
 
-const styles = {
-  button: css({
-    position: 'absolute',
-    top: `calc(var(--safe-area-inset-top) + ${themeConfig.variables.gap.big}px)`,
-    left: themeConfig.variables.gap.big,
-    ' button': {
-      alignItems: 'center',
-      width: 45,
-      height: 45,
-      borderRadius: 100,
-      background: '#E0E2ED !important',
-      color: '#000 !important',
-    },
-  }).toString(),
-};
+const button = css({
+  position: 'absolute',
+  top: `calc(var(--safe-area-inset-top) + ${themeConfig.variables.gap.big}px)`,
+  left: themeConfig.variables.gap.big,
+  ' button': {
+    alignItems: 'center',
+    width: 45,
+    height: 45,
+    borderRadius: 100,
+    background: '#E0E2ED !important',
+    color: '#000 !important',
+    ...styles.closeButton,
+  },
+}).toString();
 
 /**
  * @returns {JSX}
@@ -27,7 +27,7 @@ const Close = () => {
   const { pop } = useNavigation();
 
   return (
-    <div className={styles.button}>
+    <div className={button}>
       <AppBarAndroid.Icon
         onClick={pop}
         icon={CrossIcon}
