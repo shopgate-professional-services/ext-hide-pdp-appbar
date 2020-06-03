@@ -6,7 +6,8 @@
       "type": "admin",
       "destination": "frontend",
       "default": {
-        "closeButton": null
+        "closeButton": null,
+        "cartButton": null
       },
       "params": {
         "type": "json" ,
