@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "id": "@shopgate-project/hide-pdp-appbar",
+  "configuration": {
+    "styles": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": {
+        "closeButton": null,
+        "cartButton": null,
+        "cartBadge": null
+      },
+      "params": {
+        "type": "json" ,
+        "label": "Styles settings"
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "PdpAppBar",
+      "type": "portals",
+      "target": "app-bar.default",
+      "path": "frontend/portals/PdpAppBar"
+    }
+  ],
+  "steps": []
+}
