@@ -39,6 +39,7 @@ const styles = {
     top: 8,
     right: 15,
     transform: 'translateX(50%)',
+    ...config.cartBadge,
   }),
 };
 
