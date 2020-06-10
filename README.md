@@ -10,6 +10,7 @@ Set the following value in your Shopgate Connect Admin:
     * closeButton - (json) css rules
     * cartButton - (json) css rules
     * cartBadge - (json) css rules
+* showEmptyCartBadge (boolean) if cart icon should be shown for empty cart
 
 ## Default value
 ```
@@ -18,7 +19,8 @@ Set the following value in your Shopgate Connect Admin:
     "closeButton": null,
     "cartButton": null,
     "cartBadge": null
-  }
+  },
+  "showEmptyCartBadge": true
 }
 ```
 

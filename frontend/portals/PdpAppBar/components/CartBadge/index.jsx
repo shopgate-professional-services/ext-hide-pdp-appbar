@@ -6,7 +6,7 @@ import { themeConfig } from '@shopgate/engage';
 import { useNavigation } from '@shopgate/engage/core';
 import { getCartProductDisplayCount, CART_PATH } from '@shopgate/engage/cart';
 import { AppBarAndroid, CartIcon } from '@shopgate/engage/components';
-import { styles as config } from '../../../../config';
+import { styles as config, showEmptyCartBadge } from '../../../../config';
 
 const styles = {
   button: css({
@@ -49,7 +49,7 @@ const styles = {
 const CartBadge = ({ count }) => {
   const { push } = useNavigation();
 
-  if (!count) {
+  if (!count && !showEmptyCartBadge) {
     return null;
   }
 
