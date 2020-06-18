@@ -18,7 +18,7 @@
     "showEmptyCartBadge": {
       "type": "admin",
       "destination": "frontend",
-      "default": true,
+      "default": false,
       "params": {
         "type": "checkbox" ,
         "label": "Show cart badge for empty cart"
