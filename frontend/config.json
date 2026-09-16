@@ -1,8 +1,8 @@
 {
   "styles": {
-    "closeButton": null,
+    "cartBadge": null,
     "cartButton": null,
-    "cartBadge": null
+    "closeButton": null
   },
-  "showEmptyCartBadge": false
+  "showEmptyCartBadge": true
 }
